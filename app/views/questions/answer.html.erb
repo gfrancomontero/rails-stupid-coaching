@@ -1,0 +1,11 @@
+<form action="/ask">
+  <div class="question-container">
+    <p><%= params[:question] %></p>
+    <p class="cursive">- You</p>
+  </div>
+  <div class="answer-container">
+    <p><%=@answer%></p>
+    <p class="cursive">- Your Coach</p>
+  </div>
+  <%= button_to "Click here to ask another question", ask_url, class: "btn btn-danger", :method => "get"%>
+</form>
